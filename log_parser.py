@@ -6,7 +6,7 @@ KEYWORDS = ["ERROR", "ADMIN"]
 
 def read_log_file(file_path):
     lines = []
-    with file_path.open("r", encoding="utf-8", erros="replace") as f:
+    with file_path.open("r", encoding="utf-8", errors="replace") as f:
         for line in f:
             if line.strip():
                 lines.append(line.rstrip("\n"))
